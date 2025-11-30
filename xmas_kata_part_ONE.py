@@ -4,6 +4,7 @@ grid = [[0]*1000 for _ in range(1000)]  # total lights 1,000,000 lights
 
 
 # Instruction from the website of kata
+
 # 1. Turn ON lights in rectangle (887,9) through (959,629)
 for r in range(887, 960):       # rows 887 … 959
     for c in range(9, 630):     # cols 9 … 629
@@ -50,5 +51,13 @@ for r in range(831, 905):       # rows 831 … 904
         grid[r][c] = not grid[r][c]   # flip ON ↔ OFF
 
 # Count how many lights are ON
-total_on = sum(row.count(True) for row in grid)
+total_on = 0   # start with 0 lights ON
+
+# Go through each row
+for r in range(1000):
+    # Go through each column in that row
+    for c in range(1000):
+        if grid[r][c] == True:   # if the light is ON
+            total_on += 1        # add 1 to the total
+
 print("Total lights ON:", total_on)
