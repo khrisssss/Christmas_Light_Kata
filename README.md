@@ -5,7 +5,7 @@ This project is the Christmas lights kata from https://kata-log.rocks/christmas-
 - `examples_input.txt` → Sample instructions used for testing from the website of kata
 
 ## 
-I did use few chatgpt to understand the code (what a shame)
+I did use few chatgpt to understand the code (what a shame) I did lot of error doing it alone
 I used VS Code,  Linux Terminal and Github
 
 
